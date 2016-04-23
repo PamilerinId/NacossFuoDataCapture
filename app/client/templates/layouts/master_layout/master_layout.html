@@ -1,0 +1,24 @@
+
+<template name="MasterLayout">
+    <div class="ui large top fixed hidden menu">
+        <div class="ui container">
+            <a class="active item">{{#linkTo route="home"}}Home{{/linkTo}}</a>
+            <a class="item">{{#linkTo route="create_profile"}}YearBook Profile{{/linkTo}}</a>
+            <a class="item">{{#linkTo route="id_create"}}Id Card Profile{{/linkTo}}</a>
+        </div>
+    </div>
+    <div class = "pusher" >  
+        <div class="ui inverted vertical masthead center aligned segment">
+            <div class = "ui text container" >     
+                <h1 class="ui inverted header" >Welcome.</h1> 
+            </div>
+        </div>
+        {{> yield}}
+        <div class="ui inverted vertical footer center aligned segment">
+            <div class="ui text container">
+                <li>© 2016 the LaZyDev team. All Rights Super Reserved.</li>
+            </div>
+        </div>
+    </div>
+     
+</template>
